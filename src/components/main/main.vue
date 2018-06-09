@@ -44,8 +44,8 @@
 export default {
     data(){
         return {
-            time: new Date().toLocaleString(),
-            msg:sessionStorage.getItem('msg'),
+            time: new Date().toLocaleString(), //时间
+            msg:sessionStorage.getItem('msg'), //个人信息
             data:this.$store.state.data,
             defaultProps: {
                 children: 'children',
@@ -55,12 +55,12 @@ export default {
         }
     },
     methods:{
-        Cancellation(){
+        Cancellation(){  //注销按钮效果
             sessionStorage.setItem('msg','');
             sessionStorage.setItem('isLogin',false);
             this.$router.push('/login')
         },
-        handleNodeClick(data,node,comp){
+        handleNodeClick(data,node,comp){ //点击侧边栏进入相应的路由
             if(data.children){
                 if(node.expanded){
                     this.navData = data.children;
@@ -74,10 +74,10 @@ export default {
         }
     },
     mounted(){
-        setInterval(()=>{
+        setInterval(()=>{ //自动刷新时间
             this.time=new Date().toLocaleString()
         },1000)
-        this.$store.dispatch('getData');
+        this.$store.dispatch('getData'); //获取数据
     }
 }
 </script>

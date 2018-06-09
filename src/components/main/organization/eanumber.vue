@@ -119,7 +119,7 @@ export default {
         handleSelectionChange(val) {
             this.multipleSelection = val;
         },
-        remove(){
+        remove(){  //删除效果
             let idx;
             this.$store.state.tableData.map((v,i)=>{
                 this.multipleSelection.map(val=>{
@@ -130,7 +130,7 @@ export default {
             })
             
         },
-        addNew(){
+        addNew(){  //添加效果
             this.$store.state.tableData.push(this.input);
             this.input ={
                 date:'',
@@ -138,7 +138,7 @@ export default {
                 address:''
             }
         },
-        change(){
+        change(){  //修改效果
             this.$store.state.tableData.map((v,i)=>{
                 this.multipleSelection.map(val=>{
                     if(val === v){
@@ -153,7 +153,7 @@ export default {
                 address:''
             }
         },
-        dialogFilter(search){
+        dialogFilter(search){  //弹窗中的查询按钮效果
             this.ipt = search
             if(search){
                 let val = {}
@@ -173,9 +173,8 @@ export default {
         }
     },
     mounted(){
-        this.$store.dispatch('getTableData')
+        this.$store.dispatch('getTableData') //绑定vuex中的数据
         this.$store.dispatch('getGridData')
-        let arr = [0,1,2,3,4];
     }
 }
 </script>
