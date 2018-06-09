@@ -1,0 +1,73 @@
+.eanumber {
+  width: 100%;
+}
+
+.eanumber>.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+}
+
+.eanumber>.top>p {
+  width: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+}
+
+.eanumber>.top>p>input {
+  width: 120px;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  height: 26px;
+  border-radius: 5px;
+}
+
+.sel {
+  width: 120px;
+}
+
+.dialogTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.eanumberCont {
+  padding: 10px;
+}
+
+.mainTable {
+  margin-top: 5px;
+  padding: 0 40px;
+}
+
+.tableTitle {
+  width: 100%;
+  height: 40px;
+  padding-top: 6px;
+  padding-left: 20px;
+  background: #ccc;
+  box-sizing: border-box;
+}
+
+.dialogIpt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dialogIpt>.ipt{
+    width: 150px;
+    margin-left: 20px;
+}

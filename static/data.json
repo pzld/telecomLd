@@ -1,0 +1,58 @@
+[{
+    "label": "组织权限管理",
+    "name": "ori",
+    "children": [{
+        "label": "员工账号管理",
+        "name": "eanumber"
+      },
+      {
+        "label": "菜单管理",
+        "name": "meau"
+      },
+      {
+        "label": "用户管理",
+        "name": "user"
+      }
+    ]
+  },
+  {
+    "label": "我的工作",
+    "children": [{
+        "label": "我的申请",
+        "name": "myapply"
+      },
+      {
+        "label": "我的待办",
+        "name": "mynodo"
+      },
+      {
+        "label": "我的已办",
+        "name": "mydid"
+      },
+      {
+        "label": "我的消息",
+        "name": "mymsg"
+      }
+    ]
+  },
+  {
+    "label": "客户管理",
+    "name": "customer"
+  },
+  {
+    "label": "业务审批",
+    "name": "business"
+  },
+  {
+    "label": "工程管理",
+    "name": "engine"
+  },
+  {
+    "label": "计费账务",
+    "name": "charging"
+  },
+  {
+    "label": "运维管理",
+    "name": "pam"
+  }
+]
